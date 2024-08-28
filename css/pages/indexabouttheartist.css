@@ -1,0 +1,16 @@
+@import url(../style.css);
+@import url(../header.css);
+@import url(../footer.css);
+
+.img-container{
+    text-align: center;
+    padding: 30px;
+}
+
+.img-vivi{
+    height: auto;
+    max-height: 50vh;
+    max-width: 90vw;
+    border-radius: 5%;
+    
+}

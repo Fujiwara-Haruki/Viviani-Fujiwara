@@ -15,7 +15,7 @@ header{
     text-align: center;
 }
 
-.header-menu li{
+.header-menu > li{
     position: relative;
     padding: 1.37rem 0.5rem;
 }
@@ -26,7 +26,7 @@ header{
     color: var(--back-color)
 }
 
-.header-menu li a:hover, .current-page{
+.header-menu > li > a:hover, .current-page{
     background-color: var(--back-color);
     color: var(--main-color);
     border-top-left-radius: 40%;
@@ -41,11 +41,31 @@ header{
 
 /*submenu*/
 .header-menu-submenu{
-    display: ;
+    display: none;
+
+    list-style: none;
+    margin-top: 22px;
     position: absolute;
+    background-color: var(--second-main-color);
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.header-menu-submenu li > a{
+    color: var(--back-color);
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+}
+
+.header-menu-submenu > li > a:hover{
+    color: var(--back-color);
     background-color: antiquewhite;
+    border-radius: 5px;
 }
 
 .header-menu li:hover ul, .header-menu li.over ul{
     display: block;
+
 }
